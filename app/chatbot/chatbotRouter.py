@@ -44,19 +44,34 @@ class webhook(Resource):
                         quick_reply = message['message'].get('quick_reply')
                         if quick_reply['payload'] == 'balada_payload':
                             tipo_message(recipient_id=recipient_id, genero='balada')
-                            random_messages(recipient_id=recipient_id)
+                            
                         if quick_reply['payload'] == 'rock_payload':
                             tipo_message(recipient_id=recipient_id, genero='rock')
-                            random_messages(recipient_id=recipient_id)
+                           
                         if quick_reply['payload'] == 'metal_payload':
                             tipo_message(recipient_id=recipient_id, genero='metal')
-                            random_messages(recipient_id=recipient_id)
+                           
                         if quick_reply['payload'] == 'clasica_payload':
                             tipo_message(recipient_id=recipient_id, genero='clasica')
-                            random_messages(recipient_id=recipient_id)
+                            
                         if quick_reply['payload'] == 'reggaeton_payload':
                             tipo_message(recipient_id=recipient_id, genero='reggaeton')
-                            random_messages(recipient_id=recipient_id)
+
+                        if quick_reply['payload'] == 'salsa_payload':
+                            tipo_message(recipient_id=recipient_id, genero='salsa')
+                            
+                        if quick_reply['payload'] == 'cumbia_payload':
+                            tipo_message(recipient_id=recipient_id, genero='cumbia')
+                           
+                        if quick_reply['payload'] == 'electronica_payload':
+                            tipo_message(recipient_id=recipient_id, genero='electronica')
+                           
+                        if quick_reply['payload'] == 'rap_payload':
+                            tipo_message(recipient_id=recipient_id, genero='rap')
+                            
+                        if quick_reply['payload'] == 'folklorica_payload':
+                            tipo_message(recipient_id=recipient_id, genero='folklorica')  
+
                         random_messages(recipient_id=recipient_id)
                         #template_message(recipient_id=recipient_id)
                         initial_message(recipient_id=recipient_id)

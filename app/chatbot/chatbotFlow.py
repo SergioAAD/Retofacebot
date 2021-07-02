@@ -32,7 +32,32 @@ def initial_message(**kwargs):
                         "title":"Reggaetón",
                         "payload":"reggaeton_payload"
                         #"image_url":"https://upload.wikimedia.org/wikipedia/commons/c/c7/Solid_green.png"
-                    } 
+                    },{
+                        "content_type":"text",
+                        "title":"Salsa",
+                        "payload":"salsa_payload"
+                        #"image_url":"https://upload.wikimedia.org/wikipedia/commons/c/c7/Solid_green.png"
+                    },{
+                        "content_type":"text",
+                        "title":"Cumbia",
+                        "payload":"cumbia_payload"
+                        #"image_url":"https://upload.wikimedia.org/wikipedia/commons/c/c7/Solid_green.png"
+                    },{
+                        "content_type":"text",
+                        "title":"Electrónica",
+                        "payload":"electronica_payload"
+                        #"image_url":"https://upload.wikimedia.org/wikipedia/commons/c/c7/Solid_green.png"
+                    },{
+                        "content_type":"text",
+                        "title":"Rap",
+                        "payload":"rap_payload"
+                        #"image_url":"https://upload.wikimedia.org/wikipedia/commons/c/c7/Solid_green.png"
+                    },{
+                        "content_type":"text",
+                        "title":"Folklórica",
+                        "payload":"folklorica_payload"
+                        #"image_url":"https://upload.wikimedia.org/wikipedia/commons/c/c7/Solid_green.png"
+                    }
                 ]
             }
     )
@@ -42,7 +67,7 @@ def initial_message(**kwargs):
 def tipo_message(**kwargs):
     palabra = ['Buena elección', 'Mala elección', 'Lo mejor de lo mejor', 'Excelsior', 'Mejor no me hables']
     return sender_graph(recipient_id=kwargs['recipient_id'], message={
-        'text': f'Escogiste el color {kwargs["genero"]}, {choice(palabra)}'
+        'text': f'Escogiste el genero {kwargs["genero"]}, {choice(palabra)}'
     })
 
 # def template_message(**kwargs):
